@@ -1,0 +1,1 @@
+new Promise((res) => { try { res(corca.data.bootstrap) } catch(e) { document.addEventListener("corca-data:loaded", () => res(null)) } }).then(() => { new corca.data.bootstrap.CorcaDataBootstrap({"storeId":"andar","clientApi":"cafe24"}).run().then(() => console.log('corca-data:done')).catch(console.error); })

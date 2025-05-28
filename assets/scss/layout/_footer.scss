@@ -1,0 +1,164 @@
+#footer{
+    background: #fafafa;
+    .andar-area{
+        display: flex;
+        flex-direction: column;
+        .link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+            margin-bottom: 54px;
+        }
+        .text{
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+            color: #555;
+            margin-bottom: 24px;
+        }
+    }
+    .service-area{
+        display: flex;
+        flex-direction: column;
+        color: #555;
+        .title{
+            font-size: 13px;
+            line-height: 1.4;
+            letter-spacing: -1px;
+            font-weight: 500;
+        }
+        .contact{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-top: 4px;
+            .tel{
+                font-size: 18px;
+                line-height: 1.3;
+                letter-spacing: -0.3px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .box-wrap{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 3px 8px;
+                gap: 4px;
+                color: #212326;
+                font-size: 12px;
+                font-weight: 500;
+                border-radius: 2px;
+                background: #e2e6eb;
+                height: 23px;
+                line-height: 1;
+            }
+        }
+        .time-wrap{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4px;
+            .time{
+            font-size: 13px;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+            }
+        }
+    }
+
+    .sns-area{
+        display: flex;
+        margin-top: 24px;
+        .link{
+            display: block;
+            margin-right: 48px;
+        }
+    }
+
+    .link-area{
+        margin-top: 24px;
+
+        .link-list{
+            display: flex;
+            .link-item{
+                position: relative;
+                display: inline-block;
+                padding-right: 11px;
+                margin: 10px 10px 0 0;
+                &:not(.exclude)::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 10px;
+                    background: #ccc;
+                } 
+                .link{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    color: #777;
+                    letter-spacing: -1px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .info-area{
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        color: #777;
+
+        .info-wrap{
+            display: flex;
+            .deco{
+                display: flex;
+                align-items: center;
+                &::after{
+                    width: 1px;
+                    height: 10px;
+                    background: #ccc;
+                    margin: 0 10px;
+                    content: "";
+                }
+            }
+        }
+
+        .info{
+            display: flex;
+            font-size: 11px;
+            line-height: 13px;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            margin-top: 10px;
+        }
+        .color{
+            color: #555;
+        }
+        .copyright{
+            display: flex;
+            margin-top: 46px;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+            .deco{
+                font-weight: 400;
+            }
+        }
+    }
+
+    .mark-area{
+        display: flex;
+        margin-top: 38px;
+        gap: 24px;
+        padding-bottom: 30px;
+    }
+}

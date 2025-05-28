@@ -1,0 +1,102 @@
+.prd-list{
+    &.grid1{
+        .prd-item{
+            display: flex;
+            gap: 16px;
+            &:not(:last-child){
+                border-bottom: 1px solid #e8eaed;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &.grid2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(auto);
+        gap: 25px 8px;
+        .prd-item .thumb-area{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .prd-item{
+        position: relative;
+        .thumb-area{
+            position: relative;
+            width: 100px;
+            margin-bottom: 0;
+            .thumb{
+                max-width: 100%;
+            }
+            .tag{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: auto;
+                height: 14px;
+                img{
+                    max-height: 100%;
+                }
+            }
+            .rank{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                color: #fff;
+                background: #000;
+            }
+            .link{
+                position: absolute;
+                top: 0;left: 0;right: 0;bottom: 0;
+            }
+            .btn-fav{
+                position: absolute;
+                right: 0;bottom: 0;
+                z-index: 1;
+            }
+        }
+        .info-area{
+            padding: 10px 8px 0;
+            .prd-title{
+                font-weight: 500;
+                line-height: 1.4;
+                letter-spacing: -0.56px;
+                margin-bottom: 8px;
+            }
+            .price-wrap{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                line-height: 1.5;
+                font-size: 14px;
+                .prd-sale{
+                    font-weight: 700;
+                    .font-size{
+                        font-size: 13px;
+                    }
+                }
+                .prd-price{
+                    font-weight: 400;
+                    text-decoration: line-through;
+                    .font-size{
+                        font-size: 13px;
+                    }
+                }
+                .prd-discount{
+                    color: #8e1f29;
+                    font-weight: 700;
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+    }
+}
